@@ -1,49 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="img/icono.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blackjack - Vite</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  </head>
-  <body>
-
+    <meta name="author" content="Adrián Leal Vacas">
+    <meta name="description" content="Página web de minijuego BlackJack">
+    <meta name="copyright" content="Adrián Leal Vacas">
+    <meta name="generator" content="Visual studio code, HTML5, CSS y JavaScript">
+    <title>Blackjack - ALV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
     <!-- Cabezera -->
     <header class="titulo">
-      BlackJack
-  </header>
-  <!-- Botones -->
-  <div class="row mt-2">
-      <div id="divBotones" class="col text-center">
-          <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
-          <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir carta</button>
-          <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
-      </div>
-  </div>
-  <!-- Jugadores -->
-  <div class="row container">
-      <div class="col">
-          <h1>
-              Jugador 1 - <small>0</small>
-          </h1>
-          <div id="jugador-cartas" class="divCartas">
-              <!--<img class="carta" src="assets/cartas/2C.png">-->
-          </div>
-      </div>
-  </div>
-  <!-- Computadora -->
-  <div class="row container mt-2">
-      <div class="col">
-          <h1>
-              Computadora - <small>0</small>
-          </h1>
-          <div id="computadora-cartas" class="divCartas">
-              <!--<img class="carta" src="assets/cartas/3C.png">-->
-          </div>
-      </div>
-  </div>
+        BlackJack
+    </header>
+    <!-- Botones -->
+    <div class="row mt-2">
+        <div id="divBotones" class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+    <!-- Jugadores -->
+    <div class="row container">
+        <div class="col">
+            <h1>
+                Jugador 1 - <small>0</small>
+            </h1>
+            <div id="jugador-cartas" class="divCartas">
+                <!--<img class="carta" src="assets/cartas/2C.png">-->
+            </div>
+        </div>
+    </div>
+    <!-- Computadora -->
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>
+                Computadora - <small>0</small>
+            </h1>
+            <div id="computadora-cartas" class="divCartas">
+                <!--<img class="carta" src="assets/cartas/3C.png">-->
+            </div>
+        </div>
+    </div>
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+    <script type="module" src="/js/index.js"></script>
+</body>
 </html>
