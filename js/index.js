@@ -69,7 +69,7 @@ const determinarGanador = (puntosJugadores) => {
         } else {
             alert('Computadora Gana!');
         };
-    }, 500);
+    }, 5000);
 };
 //----------------------------------
 /**
